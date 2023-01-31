@@ -1,0 +1,35 @@
+{% extends "master.html" %}
+
+{% block title %}Create-account{% endblock %}
+
+{% block content %}
+<form action="">
+	<h1>Create account</h1>
+	<p>Already have an account 	<a href="/login/">Login</a>.</p>
+	
+	<div class="form_group">
+		<label for="username">Username:</label><br>
+	    <input type="text" name="usr" id="username" placeholder="Enter Username" required>
+	</div><br>
+
+	<div class="form_group">
+		<label for="email">Email:</label><br>
+	    <input type="email" name="email" id="email" placeholder="Enter Email" required>
+	</div><br>
+
+	<div class="form_group">
+		<label for="pwd">Password:</label><br>
+		<input type="password" name="pwd" id="pwd" placeholder="Enter Password" required>
+	</div><br>
+
+		<div class="form_group">
+		<label for="con_pwd">Confirm Password:</label><br>
+		<input type="password" name="con_pwd" id="con_pwd" placeholder="Confirm Password" required>
+	</div><br>
+
+	<div class="form_group">
+		<input type="submit" value="Submit">
+	</div>
+
+</form>
+{% endblock %}
